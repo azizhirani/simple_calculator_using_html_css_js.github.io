@@ -18,10 +18,7 @@ This is a simple calculator designed using HTML, CSS, and JavaScript. It allows 
 4. Click the "=" button to perform the operation and view the result.
 5. To clear the calculator and start over, click the "C" button.
 
-**Technologies Used:**
-- HTML: Provides the structure and layout of the calculator.
-- CSS: Styles the calculator with colors, fonts, and alignments.
-- JavaScript: Implements the calculator's logic and performs the arithmetic operations.
+
   
   
   
@@ -30,7 +27,10 @@ This is a simple calculator designed using HTML, CSS, and JavaScript. It allows 
   
 ![full window view calculator](https://github.com/azizhirani/simple_calculator_using_html_css_js.github.io/assets/61305321/41f100c6-2dcf-4606-abd4-39c20dec9d02)
 
-
+**Technologies Used:**
+- HTML: Provides the structure and layout of the calculator.
+- CSS: Styles the calculator with colors, fonts, and alignments.
+- JavaScript: Implements the calculator's logic and performs the arithmetic operations.
 
 
 **Installation:**
