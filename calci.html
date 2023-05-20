@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=
+    , initial-scale=1.0">
+    <title>SIMPLE CALCULATOR</title>
+</head>
+<body >
+    <style>
+        body{
+             background-image: url("https://img.freepik.com/free-photo/silver-shimmery-paper-background_53876-71385.jpg?w=2000");
+             background-repeat: no-repeat;
+             background-attachment: fixed;
+             background-size:cover;
+            }
+    </style>
+    <div id="main">
+        <form name="f"  action="">
+            <fieldset>
+                <legend align="center"> <b><font color="#00008B" style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">SIMPLE CACULATOR </b></legend>
+            <table align="center">
+<style>
+    table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+th, td {
+  background-color: #96D4D4;
+}
+.nodesign
+{
+    background: rgba(164, 226, 226, 0.155);
+}
+.view{
+    font-weight:medium;
+    opacity:100% ;}
+    
+    #main{ width: ;
+    height:300px}
+    
+    input{width:90%;
+    height:100%; 
+    font-size:30px;
+    margin:5px;}
+    eee{ 
+        background-color:silver; 
+        width:96%;
+        height:50px;}
+</style>                    
+               <tr  ><td colspan="4" class="nodesign"> 
+                <input type="text"  style="color: rgb(0, 0, 0)" name="ddd" class="view" placeholder="0"></td></tr>
+            <tr>
+            <td><input type="button" value="1" onclick="f.ddd.value+=1"></td>        
+            <td><input type="button" value="2" onclick="f.ddd.value+=2">  </td>     
+            <td><input type="button" value="3" onclick="f.ddd.value+=3"></td>          
+            <td><input type="button" value="+" onclick="add()"></td>
+        </tr>
+            <br>
+        <tr>
+            <td><input type="button" value="4" onclick="f.ddd.value+=4"> </td>            
+            <td><input type="button" value="5" onclick="f.ddd.value+=5">  </td>     
+            <td><input type="button" value="6" onclick="f.ddd.value+=6"></td>           
+            <td><input type="button" value="-" onclick="sub()"></td>
+        </tr>        
+            <br>
+<tr>
+            <td><input type="button" value="7" onclick="f.ddd.value+=7"> </td>            
+            <td><input type="button" value="8" onclick="f.ddd.value+=8">  </td>     
+            <td><input type="button" value="9" onclick="f.ddd.value+=9"> </td>           
+            <td><input type="button" value="/" onclick="div()"></td>
+        </tr>        
+               <br>
+<tr>
+            <td><input type="button" value="c" onclick="f.ddd.value=''"> </td> 
+           <td><input type="button" value="0" onclick="f.ddd.value+=0">  </td>     
+            <td><input type="button" value="=" onclick="f.ddd.value=eval(f.ddd.value)"></td>           
+            <td><input type="button" value="x" onclick="mul()"> </td> 
+            </tr>          
+
+                <br>
+</table></fieldset>
+        </form>
+    </div>
+
+    <script>
+        function add(){
+            var act=0,b=0;
+            act=f.ddd.value;
+            b=act.charAt(act.length-1);
+        
+            if(b=='+'||b=='-'||b=='/'||b=='*'){
+                    f.ddd.value=act.substring(0,act.length-1);
+                    f.ddd.value+='+';
+                }
+                else
+                {
+                    f.ddd.value+='+';
+            }
+        }
+            function sub(){
+                
+            var act=0,b=0;
+            act=f.ddd.value;
+            b=act.charAt(act.length-1);
+        
+            if(b=='+'||b=='-'||b=='/'||b=='*'){
+                    f.ddd.value=act.substring(0,act.length-1);
+                    f.ddd.value+='-';
+                }
+                else{
+                    f.ddd.value+='-';
+                }}
+
+            function div(){
+            var act=0,b=0;
+            act=f.ddd.value;
+            b=act.charAt(act.length-1);
+        
+            if(b=='+'||b=='-'||b=='/'||b=='*'){
+                    f.ddd.value=act.substring(0,act.length-1);
+                    f.ddd.value+='/';
+                }
+                else{
+                    f.ddd.value+='/';
+            }
+        }
+            function mul(){
+            var act=0,b=0;
+            act=f.ddd.value;
+            b=act.charAt(act.length-1);
+        
+            if(b=='+'||b=='-'||b=='/'||b=='*'){
+                    f.ddd.value=act.substring(0,act.length-1);
+                    f.ddd.value+='*';
+                }
+                else{
+                    f.ddd.value+='*';
+                }
+        }
+    </script>
+</body>
+</html>
