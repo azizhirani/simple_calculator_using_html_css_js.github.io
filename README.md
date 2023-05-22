@@ -36,6 +36,6 @@ This is a simple calculator designed using HTML, CSS, and JavaScript. It allows 
 **Installation:**
 1. Clone the repository from GitHub.
 2. Open the project in your preferred code editor.
-3. Open the `calci.html` file in your web browser.
+3. Open the `index.html` file in your web browser.
 
 Feel free to modify and enhance the calculator according to your needs. Enjoy calculating!
